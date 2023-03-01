@@ -411,8 +411,8 @@ class PdfViewerActivity : AppCompatActivity() {
     }
 
     override fun onPause() {
-        super.onPause()
         finish()
+        super.onPause()
     }
 
 }
