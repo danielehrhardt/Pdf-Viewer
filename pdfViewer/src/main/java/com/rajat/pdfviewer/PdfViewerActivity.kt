@@ -89,6 +89,7 @@ class PdfViewerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_pdf_viewer)
 
         setUpToolbar(
@@ -409,5 +410,7 @@ class PdfViewerActivity : AppCompatActivity() {
         super.onDestroy()
         pdfView.closePdfRender()
     }
+
+    
 
 }
