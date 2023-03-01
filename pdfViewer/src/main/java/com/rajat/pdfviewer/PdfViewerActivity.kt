@@ -410,9 +410,4 @@ class PdfViewerActivity : AppCompatActivity() {
         pdfView.closePdfRender()
     }
 
-    override fun onPause() {
-        finish()
-        super.onPause()
-    }
-
 }
